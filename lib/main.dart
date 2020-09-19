@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:merrand/color.dart';
 import 'package:merrand/ui/onboard/onboard.dart';
-import 'package:merrand/ui/routes.dart';
+import 'package:merrand/routes.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,9 +26,9 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      // home: Onboard(),
-      initialRoute: Onboard.routeName,
-      routes: enroute,
+      // initialRoute: Onboard.routeName,
+      home: Onboard(),
+      routes: routes,
     );
   }
 }
