@@ -6,6 +6,7 @@ import 'package:merrand/view/primary_button.dart';
 import 'onboard_slider.dart';
 
 class Onboard extends StatelessWidget {
+  static String routeName = "/onboard";
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
