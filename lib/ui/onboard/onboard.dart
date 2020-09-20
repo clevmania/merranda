@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:merrand/color.dart';
 import 'package:merrand/constants.dart';
 import 'package:merrand/size_config.dart';
+import 'package:merrand/ui/login/login.dart';
 import 'package:merrand/view/primary_button.dart';
 import 'onboard_slider.dart';
 
@@ -63,7 +64,9 @@ class _OnboardLayoutState extends State<OnboardLayout> {
                       Spacer(flex: 3),
                       PrimaryButton(
                         text: "Continue",
-                        buttonEvent: () {},
+                        buttonEvent: () {
+                          Navigator.pushNamed(context, Login.routeName);
+                        },
                       ),
                       Spacer(),
                     ],
