@@ -1,4 +1,4 @@
-List<Map<String,String>> getSliderData(){
+List<Map<String, String>> getSliderData() {
   return [
     {
       "text": "Welcome to Tokoyo, Let's shop",
@@ -27,3 +27,6 @@ const String kMatchPassError = "Passwords don't match";
 const String kNamelNullError = "Please Enter your name";
 const String kPhoneNumberNullError = "Please Enter your phone number";
 const String kAddressNullError = "Please Enter your address";
+
+const String ForgotPasswordHeader =
+    "Please enter your email to receive a link \nwhich brings you back to your account";

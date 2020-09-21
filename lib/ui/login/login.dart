@@ -83,11 +83,14 @@ class _LoginLayoutState extends State<LoginLayout> {
                         fontSize: getProportionateScreenWidth(16),
                       ),
                     ),
-                    Text(
-                      "Sign Up",
-                      style: TextStyle(
-                        fontSize: getProportionateScreenWidth(16),
-                        color: kPrimaryColor,
+                    GestureDetector(
+                      onTap: () {},
+                      child: Text(
+                        "Sign Up",
+                        style: TextStyle(
+                          fontSize: getProportionateScreenWidth(16),
+                          color: kPrimaryColor,
+                        ),
                       ),
                     ),
                   ],

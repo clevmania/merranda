@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:merrand/ui/password/forgot_password.dart';
 import 'package:merrand/view/field_errors.dart';
 import 'package:merrand/view/input_field_end_icon.dart';
 import 'package:merrand/view/primary_button.dart';
@@ -46,9 +47,13 @@ class _LoginFormState extends State<LoginForm> {
                   }),
               Text("Remember me"),
               Spacer(),
-              Text(
-                "Forgot Password",
-                style: TextStyle(decoration: TextDecoration.underline),
+              GestureDetector(
+                onTap: () =>
+                    Navigator.pushNamed(context, ForgotPassword.routeName),
+                child: Text(
+                  "Forgot Password",
+                  style: TextStyle(decoration: TextDecoration.underline),
+                ),
               ),
             ],
           ),

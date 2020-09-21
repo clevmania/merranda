@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:merrand/color.dart';
-import 'package:merrand/ui/login/login.dart';
-import 'package:merrand/ui/onboard/onboard.dart';
 import 'package:merrand/routes.dart';
+import 'package:merrand/ui/password/forgot_password.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: theme(),
       // initialRoute: Onboard.routeName,
-      home: Login(),
+      home: ForgotPassword(),
       routes: routes,
     );
   }
