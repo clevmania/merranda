@@ -67,9 +67,15 @@ class _LoginFormState extends State<LoginForm> {
             buttonEvent: () {
               if (_formKey.currentState.validate()) {
                 _formKey.currentState.save();
-                // Navigator.pushNamed(context, LoginSuccess.routeName);
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => LoginSuccess()));
+                
+                if (email.isNotEmpty &&
+                    password.isNotEmpty &&
+                    errors.isEmpty) {
+                  Navigator.pushNamed(context, LoginSuccess.routeName);
+                }
+
+                // Navigator.push(
+                // context, MaterialPageRoute(builder: (context) => LoginSuccess()));
               }
             },
           ),
@@ -101,7 +107,7 @@ class _LoginFormState extends State<LoginForm> {
           });
           return "";
         } else if (!emailValidatorRegExp.hasMatch(value) &&
-            !errors.contains(kEmailNullError)) {
+            !errors.contains(kInvalidEmailError)) {
           setState(() {
             errors.add(kInvalidEmailError);
           });
