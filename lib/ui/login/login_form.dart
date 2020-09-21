@@ -67,7 +67,9 @@ class _LoginFormState extends State<LoginForm> {
             buttonEvent: () {
               if (_formKey.currentState.validate()) {
                 _formKey.currentState.save();
-                Navigator.pushNamed(context, LoginSuccess.routeName);
+                // Navigator.pushNamed(context, LoginSuccess.routeName);
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => LoginSuccess()));
               }
             },
           ),
@@ -97,11 +99,13 @@ class _LoginFormState extends State<LoginForm> {
           setState(() {
             errors.add(kEmailNullError);
           });
+          return "";
         } else if (!emailValidatorRegExp.hasMatch(value) &&
             !errors.contains(kEmailNullError)) {
           setState(() {
             errors.add(kInvalidEmailError);
           });
+          return "";
         }
         return null;
       },
@@ -136,10 +140,12 @@ class _LoginFormState extends State<LoginForm> {
           setState(() {
             errors.add(kPassNullError);
           });
+          return "";
         } else if (value.length < 8 && !errors.contains(kShortPassError)) {
           setState(() {
             errors.add(kShortPassError);
           });
+          return "";
         }
         return null;
       },
