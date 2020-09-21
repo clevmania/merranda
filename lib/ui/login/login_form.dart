@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:merrand/ui/login/success.dart';
 import 'package:merrand/ui/password/forgot_password.dart';
 import 'package:merrand/view/field_errors.dart';
 import 'package:merrand/view/input_field_end_icon.dart';
@@ -66,6 +67,7 @@ class _LoginFormState extends State<LoginForm> {
             buttonEvent: () {
               if (_formKey.currentState.validate()) {
                 _formKey.currentState.save();
+                Navigator.pushNamed(context, LoginSuccess.routeName);
               }
             },
           ),
