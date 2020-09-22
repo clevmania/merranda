@@ -227,9 +227,7 @@ class _RegistrationFormState extends State<RegistrationForm> {
         if (password == confirmPassword) {
           removeError(kMatchPassError);
         }
-        // else if (value.length >= 8) {
-        //   removeError(kShortPassError);
-        // }
+        confirmPassword = value;
         return null;
       },
       validator: (value) {
