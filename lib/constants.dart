@@ -27,6 +27,8 @@ const String kMatchPassError = "Passwords don't match";
 const String kNamelNullError = "Please Enter your name";
 const String kPhoneNumberNullError = "Please Enter your phone number";
 const String kAddressNullError = "Please Enter your address";
+const String kLastNameNullError = "Please Enter your last name";
+
 
 const String ForgotPasswordHeader =
     "Please enter your email to receive a link \nwhich brings you back to your account";
