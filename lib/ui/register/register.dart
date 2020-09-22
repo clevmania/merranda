@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:merrand/size_config.dart';
 import 'package:merrand/styles.dart';
+import 'package:merrand/ui/profile_set_up/profile.dart';
 import 'package:merrand/view/field_errors.dart';
 import 'package:merrand/view/input_field_end_icon.dart';
 import 'package:merrand/view/primary_button.dart';
@@ -141,7 +142,9 @@ class _RegistrationFormState extends State<RegistrationForm> {
           PrimaryButton(
             text: "Register",
             buttonEvent: () {
-              if (_formKey.currentState.validate()) {}
+              if (_formKey.currentState.validate()) {
+                Navigator.pushNamed(context, Profile.routeName);
+              }
             },
           ),
         ],
