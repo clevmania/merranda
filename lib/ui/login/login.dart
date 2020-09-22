@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:merrand/color.dart';
 import 'package:merrand/size_config.dart';
+import 'package:merrand/ui/register/register.dart';
 import 'package:merrand/view/social_icons.dart';
 import 'login_form.dart';
 
@@ -84,7 +85,9 @@ class _LoginLayoutState extends State<LoginLayout> {
                       ),
                     ),
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.pushNamed(context, Register.routeName);
+                      },
                       child: Text(
                         "Sign Up",
                         style: TextStyle(

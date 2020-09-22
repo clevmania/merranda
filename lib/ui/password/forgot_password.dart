@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:merrand/constants.dart';
 import 'package:merrand/size_config.dart';
+import 'package:merrand/ui/register/register.dart';
 import 'package:merrand/view/field_errors.dart';
 import 'package:merrand/view/input_field_end_icon.dart';
 import 'package:merrand/view/primary_button.dart';
@@ -110,7 +111,7 @@ class _ForgotPasswordFormState extends State<ForgotPasswordForm> {
               ),
               GestureDetector(
                 onTap: () =>
-                    Navigator.pushNamed(context, ForgotPassword.routeName),
+                    Navigator.pushNamed(context, Register.routeName),
                 child: Text(
                   "Sign Up",
                   style: TextStyle(
