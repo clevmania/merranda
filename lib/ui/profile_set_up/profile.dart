@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:merrand/size_config.dart';
+import 'package:merrand/ui/otp/otp.dart';
 import 'package:merrand/view/field_errors.dart';
 import 'package:merrand/view/input_field_end_icon.dart';
 import 'package:merrand/view/primary_button.dart';
@@ -122,7 +123,9 @@ class _ProfileFormState extends State<ProfileForm> {
           PrimaryButton(
             text: "Update",
             buttonEvent: () {
-              if (_formKey.currentState.validate()) {}
+              if (_formKey.currentState.validate()) {
+                Navigator.pushNamed(context, Otp.routeName);
+              }
             },
           ),
         ],
