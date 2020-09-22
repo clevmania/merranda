@@ -67,15 +67,12 @@ class _LoginFormState extends State<LoginForm> {
             buttonEvent: () {
               if (_formKey.currentState.validate()) {
                 _formKey.currentState.save();
-                
-                if (email.isNotEmpty &&
-                    password.isNotEmpty &&
-                    errors.isEmpty) {
+
+                if (email.isNotEmpty && password.isNotEmpty && errors.isEmpty) {
                   Navigator.pushNamed(context, LoginSuccess.routeName);
                 }
-
-                // Navigator.push(
-                // context, MaterialPageRoute(builder: (context) => LoginSuccess()));
+                // Navigator.push(context,
+                    // MaterialPageRoute(builder: (context) => LoginSuccess()));
               }
             },
           ),
