@@ -52,6 +52,13 @@ class _ProfileLayoutState extends State<ProfileLayout> {
                 height: getProportionateScreenHeight(20),
               ),
               ProfileForm(),
+              SizedBox(
+                height: getProportionateScreenHeight(20),
+              ),
+              Text(
+                "By Updating your profile you agree \n with our Privacy Policy",
+                textAlign: TextAlign.center,
+              ),
             ],
           ),
         ),

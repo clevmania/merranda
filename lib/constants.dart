@@ -29,6 +29,7 @@ const String kPhoneNumberNullError = "Please Enter your phone number";
 const String kAddressNullError = "Please Enter your address";
 const String kLastNameNullError = "Please Enter your last name";
 
+const String otpHeaderBody = "Enter the code that was sent to \n+234805****982";
 
 const String ForgotPasswordHeader =
     "Please enter your email to receive a link \nwhich brings you back to your account";
