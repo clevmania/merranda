@@ -16,6 +16,14 @@ List<Map<String, String>> getSliderData() {
   ];
 }
 
+final List<Map<String, dynamic>> categories = [
+    {"icon": "assets/icons/Flash Icon.svg", "text": "Deals"},
+    {"icon": "assets/icons/Bill Icon.svg", "text": "Bill"},
+    {"icon": "assets/icons/Game Icon.svg", "text": "Game"},
+    {"icon": "assets/icons/Gift Icon.svg", "text": "Gifts"},
+    {"icon": "assets/icons/Discover.svg", "text": "More"},
+];
+
 // Form Error
 final RegExp emailValidatorRegExp =
     RegExp(r"^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z]+");
