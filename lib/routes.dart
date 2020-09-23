@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:merrand/ui/home/home.dart';
 import 'package:merrand/ui/login/login.dart';
 import 'package:merrand/ui/login/success.dart';
 import 'package:merrand/ui/onboard/onboard.dart';
@@ -15,4 +16,5 @@ final Map<String, WidgetBuilder> routes = {
   Register.routeName: (context) => Register(),
   Profile.routeName : (context) => Profile(),
   Otp.routeName : (context) => Otp(),
+  Home.routeName : (context) => Home(),
 };

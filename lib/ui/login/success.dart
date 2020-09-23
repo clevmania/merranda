@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:merrand/size_config.dart';
+import 'package:merrand/ui/home/home.dart';
 import 'package:merrand/view/primary_button.dart';
 
 class LoginSuccess extends StatelessWidget {
@@ -49,7 +50,9 @@ class _LoginSuccessLayoutState extends State<LoginSuccessLayout> {
             width: SizeConfig.screenHeight * 0.4,
             child: PrimaryButton(
               text: "Continue to Home",
-              buttonEvent: () {},
+              buttonEvent: () {
+                Navigator.pushNamed(context, Home.routeName);
+              },
             ),
           ),
           Spacer(),
